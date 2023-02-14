@@ -1,0 +1,555 @@
+" 2022-12-27 11:09:42 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Starting LmsprojectApplication using Java 17.0.4.1 on rushi with PID 7580 (C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject\target\classes started by Rushikesh in C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject)
+"" 2022-12-27 11:09:42 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - No active profile set, falling back to 1 default profile: "default"
+"" 2022-12-27 11:09:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+"" 2022-12-27 11:09:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+"" 2022-12-27 11:09:44 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"" 2022-12-27 11:09:44 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 152 ms. Found 8 JPA repository interfaces.
+"" 2022-12-27 11:09:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+"" 2022-12-27 11:09:46 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+"" 2022-12-27 11:09:46 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+"" 2022-12-27 11:09:46 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+"" 2022-12-27 11:09:46 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3274 ms
+"" 2022-12-27 11:09:46 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+"" 2022-12-27 11:09:46 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+"" 2022-12-27 11:09:47 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+"" 2022-12-27 11:09:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+"" 2022-12-27 11:09:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+"" 2022-12-27 11:09:48 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+"" 2022-12-27 11:10:14 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+"" 2022-12-27 11:10:14 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+"" 2022-12-27 11:10:16 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+"" 2022-12-27 11:10:17 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c67f643, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77cf6026, org.springframework.security.web.context.SecurityContextPersistenceFilter@19263fca, org.springframework.security.web.header.HeaderWriterFilter@4cfa9fc8, org.springframework.security.web.authentication.logout.LogoutFilter@4751c672, com.te.lmsproject.config.JwtRequestFilter@3e15989e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44ce3395, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c9853bc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23f2480, org.springframework.security.web.session.SessionManagementFilter@647a0964, org.springframework.security.web.access.ExceptionTranslationFilter@71268ec9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e793dfc]
+"" 2022-12-27 11:10:27 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+"" 2022-12-27 11:10:27 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+"" 2022-12-27 11:10:27 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Started LmsprojectApplication in 45.116 seconds (JVM running for 49.265)
+"" 2022-12-27 11:10:32 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+"" 2022-12-27 11:10:32 [http-nio-9090-exec-1] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-27 11:10:42 [http-nio-9090-exec-2] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-27 11:10:53 [http-nio-9090-exec-3] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-27 11:10:54 [http-nio-9090-exec-4] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-27 11:10:54 [http-nio-9090-exec-5] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-27 11:10:54 [http-nio-9090-exec-6] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-27 11:10:54 [http-nio-9090-exec-7] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-27 11:10:54 [http-nio-9090-exec-8] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-27 11:10:55 [http-nio-9090-exec-10] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-27 11:11:09 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"" 2022-12-27 11:11:09 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+"" 2022-12-27 11:11:09 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+"" 2022-12-27 11:11:09 [Thread-5] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+"" 2022-12-27 11:11:09 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+"" 2022-12-27 11:11:09 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+"" 2022-12-27 11:11:09 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+"" 2022-12-27 11:11:09 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Starting LmsprojectApplication using Java 17.0.4.1 on rushi with PID 7580 (C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject\target\classes started by Rushikesh in C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject)
+"" 2022-12-27 11:11:09 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - No active profile set, falling back to 1 default profile: "default"
+"" 2022-12-27 11:11:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"" 2022-12-27 11:11:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 8 JPA repository interfaces.
+"" 2022-12-27 11:11:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9191 (http)
+"" 2022-12-27 11:11:10 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+"" 2022-12-27 11:11:10 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+"" 2022-12-27 11:11:10 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+"" 2022-12-27 11:11:10 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1204 ms
+"" 2022-12-27 11:11:10 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+"" 2022-12-27 11:11:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+"" 2022-12-27 11:11:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+"" 2022-12-27 11:11:10 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+"" 2022-12-27 11:11:11 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+"" 2022-12-27 11:11:11 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+"" 2022-12-27 11:11:11 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+"" 2022-12-27 11:11:11 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2888a82d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c502a11, org.springframework.security.web.context.SecurityContextPersistenceFilter@f64a857, org.springframework.security.web.header.HeaderWriterFilter@4c644fc6, org.springframework.security.web.authentication.logout.LogoutFilter@1f0def2b, com.te.lmsproject.config.JwtRequestFilter@54e11947, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@390e1311, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ff4dfe4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24a4d956, org.springframework.security.web.session.SessionManagementFilter@323906c0, org.springframework.security.web.access.ExceptionTranslationFilter@526a768f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a1a7102]
+"" 2022-12-27 11:11:11 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+"" 2022-12-27 11:11:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9191 (http) with context path ''
+"" 2022-12-27 11:11:11 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Started LmsprojectApplication in 2.403 seconds (JVM running for 93.847)
+"" 2022-12-27 11:11:11 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+"" 2022-12-27 11:11:36 [http-nio-9191-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+"" 2022-12-27 11:11:36 [http-nio-9191-exec-2] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-27 11:11:40 [http-nio-9191-exec-1] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-27 11:12:59 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"" 2022-12-27 11:12:59 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+"" 2022-12-27 11:12:59 [Thread-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+"" 2022-12-27 11:12:59 [Thread-7] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+"" 2022-12-27 11:12:59 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+"" 2022-12-27 11:12:59 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+"" 2022-12-27 11:12:59 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+"" 2022-12-27 11:12:59 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Starting LmsprojectApplication using Java 17.0.4.1 on rushi with PID 7580 (C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject\target\classes started by Rushikesh in C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject)
+"" 2022-12-27 11:12:59 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - No active profile set, falling back to 1 default profile: "default"
+"" 2022-12-27 11:13:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"" 2022-12-27 11:13:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 8 JPA repository interfaces.
+"" 2022-12-27 11:13:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+"" 2022-12-27 11:13:00 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+"" 2022-12-27 11:13:00 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+"" 2022-12-27 11:13:00 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+"" 2022-12-27 11:13:00 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1095 ms
+"" 2022-12-27 11:13:00 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+"" 2022-12-27 11:13:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+"" 2022-12-27 11:13:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+"" 2022-12-27 11:13:00 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+"" 2022-12-27 11:13:00 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+"" 2022-12-27 11:13:00 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+"" 2022-12-27 11:13:00 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+"" 2022-12-27 11:13:01 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a926473, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bf9e168, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c25a560, org.springframework.security.web.header.HeaderWriterFilter@836d7ac, org.springframework.security.web.authentication.logout.LogoutFilter@63d2c0cb, com.te.lmsproject.config.JwtRequestFilter@6e5c83f2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20b86fee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4285b432, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61c49f3c, org.springframework.security.web.session.SessionManagementFilter@40001f04, org.springframework.security.web.access.ExceptionTranslationFilter@7f0ca34d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ea85f9e]
+"" 2022-12-27 11:13:01 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+"" 2022-12-27 11:13:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+"" 2022-12-27 11:13:01 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Started LmsprojectApplication in 2.253 seconds (JVM running for 203.575)
+"" 2022-12-27 11:13:01 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+"" 2022-12-27 11:13:12 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+"" 2022-12-27 11:13:12 [http-nio-9090-exec-2] INFO  c.t.l.a.JwtAutheticationController - Generating Token using Username And Password
+"" 2022-12-27 11:13:12 [http-nio-9090-exec-2] WARN  c.t.l.a.JwtAutheticationController - Enter Valid Username And Password For Token
+"" 2022-12-27 11:13:19 [http-nio-9090-exec-3] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-27 11:13:19 [http-nio-9090-exec-3] INFO  c.t.l.a.JwtAutheticationController - Registering New Role
+"" 2022-12-27 11:13:19 [http-nio-9090-exec-3] WARN  c.t.l.a.JwtAutheticationController - Enter Valid Username And Password
+"" 2022-12-27 11:13:19 [http-nio-9090-exec-3] INFO  c.t.l.adminservices.UserServiceImpl - User Saved Succesfully
+"" 2022-12-27 11:13:26 [http-nio-9090-exec-4] INFO  c.t.l.a.JwtAutheticationController - Generating Token using Username And Password
+"" 2022-12-27 11:13:26 [http-nio-9090-exec-4] WARN  c.t.l.a.JwtAutheticationController - Enter Valid Username And Password For Token
+"" 2022-12-27 11:13:56 [http-nio-9090-exec-5] INFO  c.t.l.a.MentorController - Adding Mentor Details
+"" 2022-12-27 11:13:56 [http-nio-9090-exec-5] WARN  c.t.l.a.MentorController - Enter Data Carefully
+"" 2022-12-27 11:13:56 [http-nio-9090-exec-5] INFO  c.t.l.a.MentorServiceImpl - Added Mentorn Succesfully
+"" 2022-12-27 11:15:40 [http-nio-9090-exec-10] INFO  c.t.l.m.MentorModuleController - Getting All Batch List
+"" 2022-12-27 11:15:40 [http-nio-9090-exec-10] INFO  c.t.l.m.MentorServicesImpl - Getting Final Batch List
+"" 2022-12-27 11:15:40 [http-nio-9090-exec-10] ERROR c.t.l.m.MentorServicesImpl - No One Batch Is Available At The Moment
+"" 2022-12-27 11:15:40 [http-nio-9090-exec-10] ERROR c.t.l.m.MentorServicesImpl - No One Batch Is Available At The Moment
+"" 2022-12-27 11:15:59 [http-nio-9090-exec-1] INFO  c.t.l.a.MentorController - Getting Mentor Details
+"" 2022-12-27 11:15:59 [http-nio-9090-exec-1] WARN  c.t.l.a.MentorController - Enter Valid Mentor Number
+"" 2022-12-27 11:15:59 [http-nio-9090-exec-1] ERROR c.t.l.a.MentorServiceImpl - Mentor Not Present On This ID
+"" 2022-12-27 11:15:59 [http-nio-9090-exec-1] ERROR c.t.l.a.MentorServiceImpl - Mentor Not Present On This ID
+"" 2022-12-27 11:16:04 [http-nio-9090-exec-3] INFO  c.t.l.a.MentorController - Getting Mentor Details
+"" 2022-12-27 11:16:04 [http-nio-9090-exec-3] WARN  c.t.l.a.MentorController - Enter Valid Mentor Number
+"" 2022-12-27 11:16:04 [http-nio-9090-exec-3] INFO  c.t.l.a.MentorServiceImpl - Getting Mentor Details Succesfully
+"" 2022-12-27 11:16:49 [http-nio-9090-exec-4] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-27 11:18:31 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"" 2022-12-27 11:18:31 [Thread-11] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+"" 2022-12-27 11:18:31 [Thread-11] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+"" 2022-12-27 11:18:31 [Thread-11] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+"" 2022-12-27 11:18:31 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+"" 2022-12-27 11:18:31 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+"" 2022-12-27 11:18:31 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+"2022-12-27 11:18:31 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Starting LmsprojectApplication using Java 17.0.4.1 on rushi with PID 7580 (C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject\target\classes started by Rushikesh in C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject)
+2022-12-27 11:18:31 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-27 11:18:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-27 11:18:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 8 JPA repository interfaces.
+2022-12-27 11:18:31 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-12-27 11:18:31 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-27 11:18:31 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-27 11:18:31 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-27 11:18:31 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 368 ms
+2022-12-27 11:18:31 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-27 11:18:31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2022-12-27 11:18:31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2022-12-27 11:18:31 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-27 11:18:31 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-27 11:18:31 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-27 11:18:32 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-27 11:18:32 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3627cc64, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@705e2e14, org.springframework.security.web.context.SecurityContextPersistenceFilter@6eefb223, org.springframework.security.web.header.HeaderWriterFilter@afb6df2, org.springframework.security.web.authentication.logout.LogoutFilter@3b591ce6, com.te.lmsproject.config.JwtRequestFilter@6df4c469, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5060ae52, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@702003e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2347d083, org.springframework.security.web.session.SessionManagementFilter@3d6ca407, org.springframework.security.web.access.ExceptionTranslationFilter@56e4af62, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78eb1a1d]
+2022-12-27 11:18:32 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-12-27 11:18:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-12-27 11:18:32 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Started LmsprojectApplication in 1.723 seconds (JVM running for 534.876)
+2022-12-27 11:18:32 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-12-27 11:21:51 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-27 11:21:51 [http-nio-9090-exec-2] INFO  c.t.l.a.MentorController - Getting Mentor Details
+2022-12-27 11:21:51 [http-nio-9090-exec-2] WARN  c.t.l.a.MentorController - Enter Valid Mentor Number
+2022-12-27 11:21:51 [http-nio-9090-exec-2] ERROR c.t.l.a.MentorServiceImpl - Mentor Not Present On This ID
+2022-12-27 11:21:51 [http-nio-9090-exec-2] ERROR c.t.l.a.MentorServiceImpl - Mentor Not Present On This ID
+2022-12-27 11:21:55 [http-nio-9090-exec-4] INFO  c.t.l.a.MentorController - Getting Mentor Details
+2022-12-27 11:21:55 [http-nio-9090-exec-4] WARN  c.t.l.a.MentorController - Enter Valid Mentor Number
+2022-12-27 11:21:55 [http-nio-9090-exec-4] INFO  c.t.l.a.MentorServiceImpl - Getting Mentor Details Succesfully
+2022-12-27 11:22:00 [http-nio-9090-exec-5] INFO  c.t.l.a.MentorController - Getting Mentor Details
+2022-12-27 11:22:00 [http-nio-9090-exec-5] WARN  c.t.l.a.MentorController - Enter Valid Mentor Number
+2022-12-27 11:22:00 [http-nio-9090-exec-5] INFO  c.t.l.a.MentorServiceImpl - Getting Mentor Details Succesfully
+2022-12-27 11:22:03 [http-nio-9090-exec-6] INFO  c.t.l.a.MentorController - Getting Mentor Details
+2022-12-27 11:22:03 [http-nio-9090-exec-6] WARN  c.t.l.a.MentorController - Enter Valid Mentor Number
+2022-12-27 11:22:03 [http-nio-9090-exec-6] INFO  c.t.l.a.MentorServiceImpl - Getting Mentor Details Succesfully
+2022-12-27 11:23:38 [http-nio-9090-exec-8] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+2022-12-27 11:29:00 [http-nio-9090-exec-2] INFO  c.t.l.a.MentorController - Getting Mentor Details
+2022-12-27 11:29:00 [http-nio-9090-exec-2] WARN  c.t.l.a.MentorController - Enter Valid Mentor Number
+2022-12-27 11:29:00 [http-nio-9090-exec-2] INFO  c.t.l.a.MentorServiceImpl - Getting Mentor Details Succesfully
+2022-12-27 11:29:02 [http-nio-9090-exec-3] INFO  c.t.l.a.MentorController - Getting Mentor Details
+2022-12-27 11:29:02 [http-nio-9090-exec-3] WARN  c.t.l.a.MentorController - Enter Valid Mentor Number
+2022-12-27 11:29:02 [http-nio-9090-exec-3] INFO  c.t.l.a.MentorServiceImpl - Getting Mentor Details Succesfully
+2022-12-27 11:29:08 [http-nio-9090-exec-4] INFO  c.t.l.a.MentorController - Getting Mentor Details
+2022-12-27 11:29:08 [http-nio-9090-exec-4] WARN  c.t.l.a.MentorController - Enter Valid Mentor Number
+2022-12-27 11:29:08 [http-nio-9090-exec-4] INFO  c.t.l.a.MentorServiceImpl - Getting Mentor Details Succesfully
+2022-12-27 11:30:07 [http-nio-9090-exec-6] INFO  c.t.l.a.MentorController - Deliting Mentor Details
+2022-12-27 11:30:07 [http-nio-9090-exec-6] WARN  c.t.l.a.MentorController - Enter Valid Mentor Number
+2022-12-27 11:30:07 [http-nio-9090-exec-6] ERROR c.t.l.a.MentorServiceImpl - Mentor Not Present Which You Want To Delete
+2022-12-27 11:30:07 [http-nio-9090-exec-6] ERROR c.t.l.a.MentorServiceImpl - Mentor Not Present Which You Want To Delete
+2022-12-27 11:30:21 [http-nio-9090-exec-8] INFO  c.t.l.a.MentorController - Getting All Mentor Details
+2022-12-27 11:30:21 [http-nio-9090-exec-8] INFO  c.t.l.a.MentorServiceImpl - Getting All Mentor Details Succesfully
+2022-12-27 11:30:47 [http-nio-9090-exec-10] INFO  c.t.l.a.MentorController - Updating Mentor Details
+2022-12-27 11:30:47 [http-nio-9090-exec-10] WARN  c.t.l.a.MentorController - Enter Data Carefully
+2022-12-27 11:30:47 [http-nio-9090-exec-10] ERROR c.t.l.a.MentorServiceImpl - Mentor not Present On This Id Which You Want To Update
+2022-12-27 11:30:47 [http-nio-9090-exec-10] ERROR c.t.l.a.MentorServiceImpl - Mentor not Present On This Id Which You Want To Update
+2022-12-27 11:31:47 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-27 11:31:47 [Thread-15] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-12-27 11:31:47 [Thread-15] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-27 11:31:47 [Thread-15] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-4 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2022-12-27 11:31:47 [Thread-15] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-27 11:31:47 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2022-12-27 11:31:47 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+" 2022-12-361 11:31:47 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Starting LmsprojectApplication using Java 17.0.4.1 on rushi with PID 7580 (C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject\target\classes started by Rushikesh in C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject)
+"" 2022-12-361 11:31:47 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - No active profile set, falling back to 1 default profile: "default"
+"" 2022-12-361 11:31:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"" 2022-12-361 11:31:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 8 JPA repository interfaces.
+"" 2022-12-361 11:31:49 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+"" 2022-12-361 11:31:49 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+"" 2022-12-361 11:31:49 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+"" 2022-12-361 11:31:49 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+"" 2022-12-361 11:31:49 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1101 ms
+"" 2022-12-361 11:31:49 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+"" 2022-12-361 11:31:49 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+"" 2022-12-361 11:31:49 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+"" 2022-12-361 11:31:49 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+"" 2022-12-361 11:31:49 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+"" 2022-12-361 11:31:49 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+"" 2022-12-361 11:31:49 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+"" 2022-12-361 11:31:49 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e4e70d7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43526ce3, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a419ae9, org.springframework.security.web.header.HeaderWriterFilter@19af44f4, org.springframework.security.web.authentication.logout.LogoutFilter@7173d1fc, com.te.lmsproject.config.JwtRequestFilter@41c75a36, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19a7da2b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14e25775, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51f67d57, org.springframework.security.web.session.SessionManagementFilter@7ee10b55, org.springframework.security.web.access.ExceptionTranslationFilter@48413536, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@74abafa8]
+"" 2022-12-361 11:31:50 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+"" 2022-12-361 11:31:50 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+"" 2022-12-361 11:31:50 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Started LmsprojectApplication in 2.213 seconds (JVM running for 1332.155)
+"" 2022-12-361 11:31:50 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+"" 2022-12-361 11:37:42 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+"" 2022-12-361 11:37:42 [http-nio-9090-exec-2] INFO  c.t.l.a.MentorController - Updating Mentor Details
+"" 2022-12-361 11:37:42 [http-nio-9090-exec-2] WARN  c.t.l.a.MentorController - Enter Data Carefully
+"" 2022-12-361 11:37:42 [http-nio-9090-exec-2] ERROR c.t.l.a.MentorServiceImpl - Mentor not Present On This Id Which You Want To Update
+"" 2022-12-361 11:37:42 [http-nio-9090-exec-2] ERROR c.t.l.a.MentorServiceImpl - Mentor not Present On This Id Which You Want To Update
+"" 2022-12-361 11:38:05 [http-nio-9090-exec-4] INFO  c.t.l.a.MentorController - Updating Mentor Details
+"" 2022-12-361 11:38:05 [http-nio-9090-exec-4] WARN  c.t.l.a.MentorController - Enter Data Carefully
+"" 2022-12-361 11:38:05 [http-nio-9090-exec-4] INFO  c.t.l.a.MentorServiceImpl - Update Mentor Succesfully
+"" 2022-12-361 11:38:24 [http-nio-9090-exec-5] INFO  c.t.l.a.MentorController - Adding Mentor Details
+"" 2022-12-361 11:38:24 [http-nio-9090-exec-5] WARN  c.t.l.a.MentorController - Enter Data Carefully
+"" 2022-12-361 11:38:24 [http-nio-9090-exec-5] ERROR c.t.l.a.MentorServiceImpl - Email Id Is Already Present So Enter Another Email Id
+"" 2022-12-361 11:38:24 [http-nio-9090-exec-5] ERROR c.t.l.a.MentorServiceImpl - Email Id Is Already Present So Enter Another Email Id
+"" 2022-12-361 11:38:34 [http-nio-9090-exec-7] INFO  c.t.l.a.MentorController - Adding Mentor Details
+"" 2022-12-361 11:38:34 [http-nio-9090-exec-7] WARN  c.t.l.a.MentorController - Enter Data Carefully
+"" 2022-12-361 11:38:34 [http-nio-9090-exec-7] INFO  c.t.l.a.MentorServiceImpl - Added Mentorn Succesfully
+"" 2022-12-361 11:51:12 [http-nio-9090-exec-9] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 11:51:13 [http-nio-9090-exec-10] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 11:51:38 [http-nio-9090-exec-1] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 11:51:40 [http-nio-9090-exec-2] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 11:51:41 [http-nio-9090-exec-3] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 11:51:42 [http-nio-9090-exec-4] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 11:51:42 [http-nio-9090-exec-5] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 11:51:42 [http-nio-9090-exec-6] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 11:51:59 [http-nio-9090-exec-8] INFO  c.t.l.a.JwtAutheticationController - Generating Token using Username And Password
+"" 2022-12-361 11:51:59 [http-nio-9090-exec-8] WARN  c.t.l.a.JwtAutheticationController - Enter Valid Username And Password For Token
+"" 2022-12-361 11:52:09 [http-nio-9090-exec-10] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 11:52:09 [http-nio-9090-exec-1] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 11:52:12 [http-nio-9090-exec-3] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 11:52:12 [http-nio-9090-exec-4] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 11:52:13 [http-nio-9090-exec-5] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 11:52:13 [http-nio-9090-exec-6] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 12:05:56 [RMI TCP Connection(57)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+"" 2022-12-361 12:05:56 [RMI TCP Connection(57)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+"" 2022-12-361 12:05:56 [RMI TCP Connection(57)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+"" 2022-12-361 12:05:56 [RMI TCP Connection(57)-127.0.0.1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-5 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+"" 2022-12-361 12:05:56 [RMI TCP Connection(57)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+"" 2022-12-361 12:05:56 [RMI TCP Connection(57)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+"" 2022-12-361 12:05:56 [RMI TCP Connection(57)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+"" 2022-12-361 12:43:09 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Starting LmsprojectApplication using Java 17.0.4.1 on rushi with PID 5604 (C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject\target\classes started by Rushikesh in C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject)
+"" 2022-12-361 12:43:09 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - No active profile set, falling back to 1 default profile: "default"
+"" 2022-12-361 12:43:10 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+"" 2022-12-361 12:43:10 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+"" 2022-12-361 12:43:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"" 2022-12-361 12:43:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 8 JPA repository interfaces.
+"" 2022-12-361 12:43:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+"" 2022-12-361 12:43:11 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+"" 2022-12-361 12:43:11 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+"" 2022-12-361 12:43:12 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+"" 2022-12-361 12:43:12 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2650 ms
+"" 2022-12-361 12:43:12 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+"" 2022-12-361 12:43:12 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+"" 2022-12-361 12:43:13 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+"" 2022-12-361 12:43:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+"" 2022-12-361 12:43:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+"" 2022-12-361 12:43:14 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+"" 2022-12-361 12:43:15 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+"" 2022-12-361 12:43:15 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+"" 2022-12-361 12:43:16 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+"" 2022-12-361 12:43:16 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e7c1768, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c993cb, org.springframework.security.web.context.SecurityContextPersistenceFilter@5049befe, org.springframework.security.web.header.HeaderWriterFilter@14dd3c91, org.springframework.security.web.authentication.logout.LogoutFilter@1e3374cc, com.te.lmsproject.config.JwtRequestFilter@102e9e65, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@770a37e3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6845678a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21486855, org.springframework.security.web.session.SessionManagementFilter@cc71f19, org.springframework.security.web.access.ExceptionTranslationFilter@3c6e446b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a731050]
+"" 2022-12-361 12:43:17 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+"" 2022-12-361 12:43:17 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+"" 2022-12-361 12:43:17 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Started LmsprojectApplication in 8.169 seconds (JVM running for 9.168)
+"" 2022-12-361 12:43:23 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+"" 2022-12-361 12:43:23 [http-nio-9090-exec-1] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 12:43:23 [http-nio-9090-exec-1] INFO  c.t.l.a.JwtAutheticationController - Registering New Role
+"" 2022-12-361 12:43:23 [http-nio-9090-exec-1] WARN  c.t.l.a.JwtAutheticationController - Enter Valid Username And Password
+"" 2022-12-361 12:43:23 [http-nio-9090-exec-1] INFO  c.t.l.adminservices.UserServiceImpl - User Saved Succesfully
+"" 2022-12-361 12:43:35 [http-nio-9090-exec-3] INFO  c.t.l.a.JwtAutheticationController - Generating Token using Username And Password
+"" 2022-12-361 12:43:35 [http-nio-9090-exec-3] WARN  c.t.l.a.JwtAutheticationController - Enter Valid Username And Password For Token
+"" 2022-12-361 12:43:59 [http-nio-9090-exec-4] INFO  c.t.l.a.JwtAutheticationController - Generating Token using Username And Password
+"" 2022-12-361 12:43:59 [http-nio-9090-exec-4] WARN  c.t.l.a.JwtAutheticationController - Enter Valid Username And Password For Token
+"" 2022-12-361 12:44:45 [http-nio-9090-exec-5] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 12:44:45 [http-nio-9090-exec-5] INFO  c.t.l.a.JwtAutheticationController - Registering New Role
+"" 2022-12-361 12:44:45 [http-nio-9090-exec-5] WARN  c.t.l.a.JwtAutheticationController - Enter Valid Username And Password
+"" 2022-12-361 12:44:45 [http-nio-9090-exec-5] INFO  c.t.l.adminservices.UserServiceImpl - User Saved Succesfully
+"" 2022-12-361 12:44:59 [http-nio-9090-exec-6] INFO  c.t.l.a.JwtAutheticationController - Generating Token using Username And Password
+"" 2022-12-361 12:44:59 [http-nio-9090-exec-6] WARN  c.t.l.a.JwtAutheticationController - Enter Valid Username And Password For Token
+"" 2022-12-361 12:45:08 [http-nio-9090-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+"org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:385)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:235)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy3/jdk.proxy3.$Proxy134.findByUsername(Unknown Source)
+	at com.te.lmsproject.config.JwtUsersDetailService.loadUserByUsername(JwtUsersDetailService.java:26)
+	at com.te.lmsproject.config.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:61)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:128)
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1672)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getSingleResult(CriteriaQueryTypeQueryAdapter.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:406)
+	at jdk.proxy3/jdk.proxy3.$Proxy171.getSingleResult(Unknown Source)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:198)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 61 common frames omitted
+" 2022-12-361 12:45:17 [http-nio-9090-exec-8] INFO  c.t.l.a.MentorController - Getting Mentor Details
+"" 2022-12-361 12:45:17 [http-nio-9090-exec-8] WARN  c.t.l.a.MentorController - Enter Valid Mentor Number
+"" 2022-12-361 12:45:17 [http-nio-9090-exec-8] INFO  c.t.l.a.MentorServiceImpl - Getting Mentor Details Succesfully
+"" 2022-12-361 12:45:49 [http-nio-9090-exec-10] WARN  c.t.l.config.JwtRequestFilter - JWT Token does not begin with Bearer String
+"" 2022-12-361 12:49:11 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"" 2022-12-361 12:49:11 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+"" 2022-12-361 12:49:11 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+"" 2022-12-361 12:49:11 [Thread-5] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+"" 2022-12-361 12:49:11 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+"" 2022-12-361 12:49:11 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+"" 2022-12-361 12:49:11 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+"" 2022-12-361 12:49:11 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Starting LmsprojectApplication using Java 17.0.4.1 on rushi with PID 5604 (C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject\target\classes started by Rushikesh in C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject)
+"" 2022-12-361 12:49:11 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - No active profile set, falling back to 1 default profile: "default"
+"" 2022-12-361 12:49:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"" 2022-12-361 12:49:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 8 JPA repository interfaces.
+"" 2022-12-361 12:49:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+"" 2022-12-361 12:49:12 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+"" 2022-12-361 12:49:12 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+"" 2022-12-361 12:49:12 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+"" 2022-12-361 12:49:12 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 429 ms
+"" 2022-12-361 12:49:12 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+"" 2022-12-361 12:49:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+"" 2022-12-361 12:49:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+"" 2022-12-361 12:49:12 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+"" 2022-12-361 12:49:12 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+"" 2022-12-361 12:49:12 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+"" 2022-12-361 12:49:12 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+"" 2022-12-361 12:49:12 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64389a18, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bbba577, org.springframework.security.web.context.SecurityContextPersistenceFilter@51ff2fca, org.springframework.security.web.header.HeaderWriterFilter@617e17ee, org.springframework.security.web.authentication.logout.LogoutFilter@788542fd, com.te.lmsproject.config.JwtRequestFilter@5a81ce19, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a3efd93, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b6e405d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56827882, org.springframework.security.web.session.SessionManagementFilter@602f6edb, org.springframework.security.web.access.ExceptionTranslationFilter@62dd32f4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24e49dde]
+"" 2022-12-361 12:49:13 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+"" 2022-12-361 12:49:13 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+"" 2022-12-361 12:49:13 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Started LmsprojectApplication in 1.649 seconds (JVM running for 364.634)
+"" 2022-12-361 12:49:13 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+"" 2022-12-361 12:49:17 [http-nio-9090-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+"" 2022-12-361 12:49:46 [http-nio-9090-exec-8] INFO  c.t.l.a.JwtAutheticationController - Generating Token using Username And Password
+"" 2022-12-361 12:49:46 [http-nio-9090-exec-8] WARN  c.t.l.a.JwtAutheticationController - Enter Valid Username And Password For Token
+"" 2022-12-361 12:49:53 [http-nio-9090-exec-9] INFO  c.t.l.a.MentorController - Getting Mentor Details
+"" 2022-12-361 12:49:53 [http-nio-9090-exec-9] WARN  c.t.l.a.MentorController - Enter Valid Mentor Number
+"" 2022-12-361 12:49:53 [http-nio-9090-exec-9] INFO  c.t.l.a.MentorServiceImpl - Getting Mentor Details Succesfully
+"" 2022-12-361 12:49:55 [http-nio-9090-exec-10] INFO  c.t.l.a.MentorController - Getting Mentor Details
+"" 2022-12-361 12:49:55 [http-nio-9090-exec-10] WARN  c.t.l.a.MentorController - Enter Valid Mentor Number
+"" 2022-12-361 12:49:55 [http-nio-9090-exec-10] INFO  c.t.l.a.MentorServiceImpl - Getting Mentor Details Succesfully
+"" 2022-12-361 12:50:06 [http-nio-9090-exec-1] INFO  c.t.l.a.MentorController - Getting Mentor Details
+"" 2022-12-361 12:50:06 [http-nio-9090-exec-1] WARN  c.t.l.a.MentorController - Enter Valid Mentor Number
+"" 2022-12-361 12:50:06 [http-nio-9090-exec-1] INFO  c.t.l.a.MentorServiceImpl - Getting Mentor Details Succesfully
+"" 2022-12-361 13:08:16 [http-nio-9090-exec-1] INFO  c.t.l.a.MentorController - Getting Mentor Details
+"" 2022-12-361 13:08:16 [http-nio-9090-exec-1] WARN  c.t.l.a.MentorController - Enter Valid Mentor Number
+"" 2022-12-361 13:08:16 [http-nio-9090-exec-1] INFO  c.t.l.a.MentorServiceImpl - Getting Mentor Details Succesfully
+"" 2022-12-361 13:18:39 [RMI TCP Connection(39)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+"" 2022-12-361 13:18:39 [RMI TCP Connection(39)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+"" 2022-12-361 13:18:39 [RMI TCP Connection(39)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+"" 2022-12-361 13:18:39 [RMI TCP Connection(39)-127.0.0.1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+"" 2022-12-361 13:18:39 [RMI TCP Connection(39)-127.0.0.1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-2 connection closer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+"" 2022-12-361 13:18:39 [RMI TCP Connection(39)-127.0.0.1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-2 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+"" 2022-12-361 13:18:39 [RMI TCP Connection(39)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+"" 2022-12-361 13:18:39 [RMI TCP Connection(39)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+"" 2022-12-361 13:18:39 [RMI TCP Connection(39)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+"" 2022-12-361 13:30:38 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Starting LmsprojectApplication using Java 17.0.4.1 on rushi with PID 13424 (C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject\target\classes started by Rushikesh in C:\Users\Rushikesh\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\lmsproject)
+"" 2022-12-361 13:30:38 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - No active profile set, falling back to 1 default profile: "default"
+"" 2022-12-361 13:30:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+"" 2022-12-361 13:30:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+"" 2022-12-361 13:30:39 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"" 2022-12-361 13:30:39 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 8 JPA repository interfaces.
+"" 2022-12-361 13:30:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+"" 2022-12-361 13:30:40 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+"" 2022-12-361 13:30:40 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+"" 2022-12-361 13:30:40 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+"" 2022-12-361 13:30:40 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2132 ms
+"" 2022-12-361 13:30:40 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+"" 2022-12-361 13:30:40 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+"" 2022-12-361 13:30:40 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+"" 2022-12-361 13:30:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+"" 2022-12-361 13:30:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+"" 2022-12-361 13:30:41 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+"" 2022-12-361 13:30:44 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+"" 2022-12-361 13:30:44 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+"" 2022-12-361 13:30:44 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+"" 2022-12-361 13:30:45 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@372a8560, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38685298, org.springframework.security.web.context.SecurityContextPersistenceFilter@67843748, org.springframework.security.web.header.HeaderWriterFilter@4e33c455, org.springframework.security.web.authentication.logout.LogoutFilter@6157e02c, com.te.lmsproject.config.JwtRequestFilter@666a8c0a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cdf0171, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e08056a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@445b6eb4, org.springframework.security.web.session.SessionManagementFilter@958a654, org.springframework.security.web.access.ExceptionTranslationFilter@40371253, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6adf8626]
+"" 2022-12-361 13:30:46 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+"" 2022-12-361 13:30:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+"" 2022-12-361 13:30:46 [restartedMain] INFO  c.t.lmsproject.LmsprojectApplication - Started LmsprojectApplication in 8.314 seconds (JVM running for 11.993)
+"" 2022-12-361 14:56:51 [RMI TCP Connection(88)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+"" 2022-12-361 14:56:51 [RMI TCP Connection(88)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+"" 2022-12-361 14:56:51 [RMI TCP Connection(88)-127.0.0.1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+"" 2022-12-361 14:56:51 [RMI TCP Connection(88)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+"" 2022-12-361 14:56:51 [RMI TCP Connection(88)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+"" 2022-12-361 14:56:51 [RMI TCP Connection(88)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+"
